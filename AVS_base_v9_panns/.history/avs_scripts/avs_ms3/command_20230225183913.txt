@@ -1,0 +1,7 @@
+python train.py --session_name MS3_pvt --visual_backbone pvt --max_epoches 60 --train_batch_size 4 --lr 0.0001 --tpavi_stages 0 1 2 3
+
+python train.py --session_name MS3_swin --visual_backbone swin --max_epoches 60 --train_batch_size 4 --lr 0.0001 --tpavi_stages 0 1 2 3
+
+python test.py --session_name MS3_pvt --visual_backbone pvt --weights "./train_logs/MS3_pvt_20230225-153026/checkpoints/MS3_pvt_best.pth" --test_batch_size 4 --tpavi_stages 0 1 2 3 --save_pred_mask
+
+python test.py --session_name MS3_swin --visual_backbone swin --weights "./train_logs/MS3_swin_20230225-171458/checkpoints/MS3_swin_best.pth" --test_batch_size 4 --tpavi_stages 0 1 2 3 --save_pred_mask
