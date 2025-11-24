@@ -33,4 +33,6 @@ python test.py --session_name S4_pvt --visual_backbone pvt --weights "path/to/we
 ```
 
 The model is trained based on the AVSBench dataset https://github.com/OpenNLPLab/AVSBench
+
+
 You can access the pre-processed data by contacting us by e-mail: zfshi@std.uestc.edu.cn
